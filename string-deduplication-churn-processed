@@ -1,0 +1,5 @@
+|manual_dedup|g1_dedup|churn_gc|string_count|string_length|gc_freq|total_seen|
+|False|True|None|65536|16|65536|3089589|
+|False|True|None|65536|16|65536|3089589|
+|False|True|None|65536|16|65536|2281140|
+|False|True|None|65536|16|65536|2248579|
