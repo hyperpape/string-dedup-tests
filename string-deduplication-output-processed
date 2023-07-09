@@ -1,194 +1,193 @@
-| manual_dedup | g1_dedup | churn_gc | string_count | string_length | gc_freq | total_seen |
-|--------------+----------+----------+--------------+---------------+---------+------------|
-| True         | True     | None     |            1 |             0 | 1048576 |   25930662 |
-| True         | True     | None     |            1 |            16 | 1048576 |   25942878 |
-| True         | True     | None     |            1 |           256 | 1048576 |   25933340 |
-| True         | True     | None     |            1 |          2048 | 1048576 |   25926012 |
-| True         | True     | None     |         1024 |             0 | 1048576 |   25934683 |
-| True         | True     | None     |         1024 |            16 | 1048576 |   25908899 |
-| True         | True     | None     |         1024 |           256 | 1048576 |   25860370 |
-| True         | True     | None     |         1024 |          2048 | 1048576 |   25485967 |
-| True         | True     | None     |        49152 |             0 | 1048576 |   25880320 |
-| True         | True     | None     |        49152 |            16 | 1048576 |   25320206 |
-| True         | True     | None     |        49152 |           256 | 1048576 |   22947574 |
-| True         | True     | None     |        49152 |          2048 | 1048576 |    5312434 |
-| True         | True     | None     |            1 |             0 |   65536 |   25934037 |
-| True         | True     | None     |            1 |            16 |   65536 |   25933724 |
-| True         | True     | None     |            1 |           256 |   65536 |   25931536 |
-| True         | True     | None     |            1 |          2048 |   65536 |   25928043 |
-| True         | True     | None     |         1024 |             0 |   65536 |   25931828 |
-| True         | True     | None     |         1024 |            16 |   65536 |   25909387 |
-| True         | True     | None     |         1024 |           256 |   65536 |   25864074 |
-| True         | True     | None     |         1024 |          2048 |   65536 |   25484952 |
-| True         | True     | None     |        49152 |             0 |   65536 |   25875071 |
-| True         | True     | None     |        49152 |            16 |   65536 |   25315824 |
-| True         | True     | None     |        49152 |           256 |   65536 |   22949606 |
-| True         | True     | None     |        49152 |          2048 |   65536 |    5305588 |
-| False        | True     | None     |            1 |             0 | 1048576 |    4470131 |
-| False        | True     | None     |            1 |            16 | 1048576 |    2538491 |
-| False        | True     | None     |            1 |           256 | 1048576 |     629288 |
-| False        | True     | None     |            1 |          2048 | 1048576 |     126710 |
-| False        | True     | None     |         1024 |             0 | 1048576 |    4484328 |
-| False        | True     | None     |         1024 |            16 | 1048576 |    2468790 |
-| False        | True     | None     |         1024 |           256 | 1048576 |     653831 |
-| False        | True     | None     |         1024 |          2048 | 1048576 |     118351 |
-| False        | True     | None     |        49152 |             0 | 1048576 |    4469446 |
-| False        | True     | None     |        49152 |            16 | 1048576 |    2376803 |
-| False        | True     | None     |        49152 |           256 | 1048576 |     509345 |
-| False        | True     | None     |        49152 |          2048 | 1048576 |      57947 |
-| False        | True     | None     |            1 |             0 |   65536 |    4470129 |
-| False        | True     | None     |            1 |            16 |   65536 |    3835000 |
-| False        | True     | None     |            1 |           256 |   65536 |    4199465 |
-| False        | True     | None     |            1 |          2048 |   65536 |    4020224 |
-| False        | True     | None     |         1024 |             0 |   65536 |    4480948 |
-| False        | True     | None     |         1024 |            16 |   65536 |    3399859 |
-| False        | True     | None     |         1024 |           256 |   65536 |    4207463 |
-| False        | True     | None     |         1024 |          2048 |   65536 |    3950660 |
-| False        | True     | None     |        49152 |             0 |   65536 |    4466367 |
-| False        | True     | None     |        49152 |            16 |   65536 |    3102699 |
-| False        | True     | None     |        49152 |           256 |   65536 |    3692237 |
-| False        | True     | None     |        49152 |          2048 |   65536 |     522091 |
-| True         | True     | None     |            1 |             0 | 1048576 |   25937667 |
-| True         | True     | None     |            1 |            16 | 1048576 |   25941824 |
-| True         | True     | None     |            1 |           256 | 1048576 |   25930000 |
-| True         | True     | None     |            1 |          2048 | 1048576 |   25925412 |
-| True         | True     | None     |         1024 |             0 | 1048576 |   25952237 |
-| True         | True     | None     |         1024 |            16 | 1048576 |   25908622 |
-| True         | True     | None     |         1024 |           256 | 1048576 |   25855000 |
-| True         | True     | None     |         1024 |          2048 | 1048576 |   25487998 |
-| True         | True     | None     |        49152 |             0 | 1048576 |   25885824 |
-| True         | True     | None     |        49152 |            16 | 1048576 |   25317901 |
-| True         | True     | None     |        49152 |           256 | 1048576 |   22949108 |
-| True         | True     | None     |        49152 |          2048 | 1048576 |    5311547 |
-| True         | True     | None     |            1 |             0 |   65536 |   25954704 |
-| True         | True     | None     |            1 |            16 |   65536 |   25941978 |
-| True         | True     | None     |            1 |           256 |   65536 |   25935196 |
-| True         | True     | None     |            1 |          2048 |   65536 |   25924004 |
-| True         | True     | None     |         1024 |             0 |   65536 |   25934483 |
-| True         | True     | None     |         1024 |            16 |   65536 |   25906326 |
-| True         | True     | None     |         1024 |           256 |   65536 |   25864144 |
-| True         | True     | None     |         1024 |          2048 |   65536 |   25483936 |
-| True         | True     | None     |        49152 |             0 |   65536 |   25893245 |
-| True         | True     | None     |        49152 |            16 |   65536 |   25307544 |
-| True         | True     | None     |        49152 |           256 |   65536 |   22949157 |
-| True         | True     | None     |        49152 |          2048 |   65536 |    5310701 |
-| False        | True     | None     |            1 |             0 | 1048576 |    4482684 |
-| False        | True     | None     |            1 |            16 | 1048576 |    2490376 |
-| False        | True     | None     |            1 |           256 | 1048576 |     500079 |
-| False        | True     | None     |            1 |          2048 | 1048576 |      70263 |
-| False        | True     | None     |         1024 |             0 | 1048576 |    4481550 |
-| False        | True     | None     |         1024 |            16 | 1048576 |    2417633 |
-| False        | True     | None     |         1024 |           256 | 1048576 |     487646 |
-| False        | True     | None     |         1024 |          2048 | 1048576 |      70795 |
-| False        | True     | None     |        49152 |             0 | 1048576 |    4465321 |
-| False        | True     | None     |        49152 |            16 | 1048576 |    2283492 |
-| False        | True     | None     |        49152 |           256 | 1048576 |     389843 |
-| False        | True     | None     |        49152 |          2048 | 1048576 |      15742 |
-| False        | True     | None     |            1 |             0 |   65536 |    4470331 |
-| False        | True     | None     |            1 |            16 |   65536 |    2458957 |
-| False        | True     | None     |            1 |           256 |   65536 |     507368 |
-| False        | True     | None     |            1 |          2048 |   65536 |      70759 |
-| False        | True     | None     |         1024 |             0 |   65536 |    4483550 |
-| False        | True     | None     |         1024 |            16 |   65536 |    2427114 |
-| False        | True     | None     |         1024 |           256 |   65536 |     494805 |
-| False        | True     | None     |         1024 |          2048 |   65536 |      70247 |
-| False        | True     | None     |        49152 |             0 |   65536 |    4468550 |
-| False        | True     | None     |        49152 |            16 |   65536 |    2299569 |
-| False        | True     | None     |        49152 |           256 |   65536 |     390096 |
-| False        | True     | None     |        49152 |          2048 |   65536 |      15452 |
-| True         | False    | None     |            1 |             0 | 1048576 |   25937045 |
-| True         | False    | None     |            1 |            16 | 1048576 |   25932978 |
-| True         | False    | None     |            1 |           256 | 1048576 |   25920000 |
-| True         | False    | None     |            1 |          2048 | 1048576 |   25918019 |
-| True         | False    | None     |         1024 |             0 | 1048576 |   25937888 |
-| True         | False    | None     |         1024 |            16 | 1048576 |   25900407 |
-| True         | False    | None     |         1024 |           256 | 1048576 |   25803108 |
-| True         | False    | None     |         1024 |          2048 | 1048576 |   25059586 |
-| True         | False    | None     |        49152 |             0 | 1048576 |   25881367 |
-| True         | False    | None     |        49152 |            16 | 1048576 |   25298543 |
-| True         | False    | None     |        49152 |           256 | 1048576 |   22887072 |
-| True         | False    | None     |        49152 |          2048 | 1048576 |    4886367 |
-| True         | False    | None     |            1 |             0 |   65536 |   25930263 |
-| True         | False    | None     |            1 |            16 |   65536 |   25939592 |
-| True         | False    | None     |            1 |           256 |   65536 |   25925000 |
-| True         | False    | None     |            1 |          2048 |   65536 |   25916034 |
-| True         | False    | None     |         1024 |             0 |   65536 |   25937824 |
-| True         | False    | None     |         1024 |            16 |   65536 |   25899531 |
-| True         | False    | None     |         1024 |           256 |   65536 |   25799765 |
-| True         | False    | None     |         1024 |          2048 |   65536 |   25062721 |
-| True         | False    | None     |        49152 |             0 |   65536 |   25877468 |
-| True         | False    | None     |        49152 |            16 |   65536 |   25296518 |
-| True         | False    | None     |        49152 |           256 |   65536 |   22885916 |
-| True         | False    | None     |        49152 |          2048 |   65536 |    4886967 |
-| False        | False    | None     |            1 |             0 | 1048576 |    4470218 |
-| False        | False    | None     |            1 |            16 | 1048576 |    2124550 |
-| False        | False    | None     |            1 |           256 | 1048576 |     431864 |
-| False        | False    | None     |            1 |          2048 | 1048576 |      62032 |
-| False        | False    | None     |         1024 |             0 | 1048576 |    4481678 |
-| False        | False    | None     |         1024 |            16 | 1048576 |    2126875 |
-| False        | False    | None     |         1024 |           256 | 1048576 |     430236 |
-| False        | False    | None     |         1024 |          2048 | 1048576 |      60862 |
-| False        | False    | None     |        49152 |             0 | 1048576 |    4466449 |
-| False        | False    | None     |        49152 |            16 | 1048576 |    2079302 |
-| False        | False    | None     |        49152 |           256 | 1048576 |     382442 |
-| False        | False    | None     |        49152 |          2048 | 1048576 |      12820 |
-| False        | False    | None     |            1 |             0 |   65536 |    4469860 |
-| False        | False    | None     |            1 |            16 |   65536 |    2123819 |
-| False        | False    | None     |            1 |           256 |   65536 |     430343 |
-| False        | False    | None     |            1 |          2048 |   65536 |      61841 |
-| False        | False    | None     |         1024 |             0 |   65536 |    4478824 |
-| False        | False    | None     |         1024 |            16 |   65536 |    2123819 |
-| False        | False    | None     |         1024 |           256 |   65536 |     429311 |
-| False        | False    | None     |         1024 |          2048 |   65536 |      60818 |
-| False        | False    | None     |        49152 |             0 |   65536 |    4466814 |
-| False        | False    | None     |        49152 |            16 |   65536 |    2075749 |
-| False        | False    | None     |        49152 |           256 |   65536 |     381065 |
-| False        | False    | None     |        49152 |          2048 |   65536 |      12671 |
-| True         | False    | None     |            1 |             0 | 1048576 |   25935941 |
-| True         | False    | None     |            1 |            16 | 1048576 |   25931982 |
-| True         | False    | None     |            1 |           256 | 1048576 |   25922656 |
-| True         | False    | None     |            1 |          2048 | 1048576 |   25916019 |
-| True         | False    | None     |         1024 |             0 | 1048576 |   25926346 |
-| True         | False    | None     |         1024 |            16 | 1048576 |   25909539 |
-| True         | False    | None     |         1024 |           256 | 1048576 |   25799504 |
-| True         | False    | None     |         1024 |          2048 | 1048576 |   25064174 |
-| True         | False    | None     |        49152 |             0 | 1048576 |   25883550 |
-| True         | False    | None     |        49152 |            16 | 1048576 |   25297824 |
-| True         | False    | None     |        49152 |           256 | 1048576 |   22885820 |
-| True         | False    | None     |        49152 |          2048 | 1048576 |    4888951 |
-| True         | False    | None     |            1 |             0 |   65536 |   25929824 |
-| True         | False    | None     |            1 |            16 |   65536 |   25932982 |
-| True         | False    | None     |            1 |           256 |   65536 |   25926325 |
-| True         | False    | None     |            1 |          2048 |   65536 |   25914478 |
-| True         | False    | None     |         1024 |             0 |   65536 |   25929245 |
-| True         | False    | None     |         1024 |            16 |   65536 |   25902725 |
-| True         | False    | None     |         1024 |           256 |   65536 |   25799108 |
-| True         | False    | None     |         1024 |          2048 |   65536 |   25063367 |
-| True         | False    | None     |        49152 |             0 |   65536 |   25883362 |
-| True         | False    | None     |        49152 |            16 |   65536 |   25297616 |
-| True         | False    | None     |        49152 |           256 |   65536 |   22885759 |
-| True         | False    | None     |        49152 |          2048 |   65536 |    4886413 |
-| False        | False    | None     |            1 |             0 | 1048576 |    4467367 |
-| False        | False    | None     |            1 |            16 | 1048576 |    2126530 |
-| False        | False    | None     |            1 |           256 | 1048576 |     430665 |
-| False        | False    | None     |            1 |          2048 | 1048576 |      61823 |
-| False        | False    | None     |         1024 |             0 | 1048576 |    4481169 |
-| False        | False    | None     |         1024 |            16 | 1048576 |    2126110 |
-| False        | False    | None     |         1024 |           256 | 1048576 |     430428 |
-| False        | False    | None     |         1024 |          2048 | 1048576 |      61037 |
-| False        | False    | None     |        49152 |             0 | 1048576 |    4463225 |
-| False        | False    | None     |        49152 |            16 | 1048576 |    2081110 |
-| False        | False    | None     |        49152 |           256 | 1048576 |     380974 |
-| False        | False    | None     |        49152 |          2048 | 1048576 |      12752 |
-| False        | False    | None     |            1 |             0 |   65536 |    4470115 |
-| False        | False    | None     |            1 |            16 |   65536 |    2125898 |
-| False        | False    | None     |            1 |           256 |   65536 |     430684 |
-| False        | False    | None     |            1 |          2048 |   65536 |      62023 |
-| False        | False    | None     |         1024 |             0 |   65536 |    4467640 |
-| False        | False    | None     |         1024 |            16 |   65536 |    2125978 |
-| False        | False    | None     |         1024 |           256 |   65536 |     430015 |
-| False        | False    | None     |         1024 |          2048 |   65536 |      60852 |
-| False        | False    | None     |        49152 |             0 |   65536 |    4468824 |
-| False        | False    | None     |        49152 |            16 |   65536 |    2078274 |
-| False        | False    | None     |        49152 |           256 |   65536 |     382497 |
-| False        | False    | None     |        49152 |          2048 |   65536 |      12753 |
+| manual_dedup | g1_dedup | churn_gc | string_count | string_length | gc_freq | total_seen | system_gc |
+| True         | True     | True     |            1 |             0 | 1048576 |   25930662 | False     |
+| True         | True     | True     |            1 |            16 | 1048576 |   25942878 | False     |
+| True         | True     | True     |            1 |           256 | 1048576 |   25933340 | False     |
+| True         | True     | True     |            1 |          2048 | 1048576 |   25926012 | False     |
+| True         | True     | True     |         1024 |             0 | 1048576 |   25934683 | False     |
+| True         | True     | True     |         1024 |            16 | 1048576 |   25908899 | False     |
+| True         | True     | True     |         1024 |           256 | 1048576 |   25860370 | False     |
+| True         | True     | True     |         1024 |          2048 | 1048576 |   25485967 | False     |
+| True         | True     | True     |        49152 |             0 | 1048576 |   25880320 | False     |
+| True         | True     | True     |        49152 |            16 | 1048576 |   25320206 | False     |
+| True         | True     | True     |        49152 |           256 | 1048576 |   22947574 | False     |
+| True         | True     | True     |        49152 |          2048 | 1048576 |    5312434 | False     |
+| True         | True     | True     |            1 |             0 |   65536 |   25934037 | False     |
+| True         | True     | True     |            1 |            16 |   65536 |   25933724 | False     |
+| True         | True     | True     |            1 |           256 |   65536 |   25931536 | False     |
+| True         | True     | True     |            1 |          2048 |   65536 |   25928043 | False     |
+| True         | True     | True     |         1024 |             0 |   65536 |   25931828 | False     |
+| True         | True     | True     |         1024 |            16 |   65536 |   25909387 | False     |
+| True         | True     | True     |         1024 |           256 |   65536 |   25864074 | False     |
+| True         | True     | True     |         1024 |          2048 |   65536 |   25484952 | False     |
+| True         | True     | True     |        49152 |             0 |   65536 |   25875071 | False     |
+| True         | True     | True     |        49152 |            16 |   65536 |   25315824 | False     |
+| True         | True     | True     |        49152 |           256 |   65536 |   22949606 | False     |
+| True         | True     | True     |        49152 |          2048 |   65536 |    5305588 | False     |
+| False        | True     | True     |            1 |             0 | 1048576 |    4470131 | False     |
+| False        | True     | True     |            1 |            16 | 1048576 |    2538491 | False     |
+| False        | True     | True     |            1 |           256 | 1048576 |     629288 | False     |
+| False        | True     | True     |            1 |          2048 | 1048576 |     126710 | False     |
+| False        | True     | True     |         1024 |             0 | 1048576 |    4484328 | False     |
+| False        | True     | True     |         1024 |            16 | 1048576 |    2468790 | False     |
+| False        | True     | True     |         1024 |           256 | 1048576 |     653831 | False     |
+| False        | True     | True     |         1024 |          2048 | 1048576 |     118351 | False     |
+| False        | True     | True     |        49152 |             0 | 1048576 |    4469446 | False     |
+| False        | True     | True     |        49152 |            16 | 1048576 |    2376803 | False     |
+| False        | True     | True     |        49152 |           256 | 1048576 |     509345 | False     |
+| False        | True     | True     |        49152 |          2048 | 1048576 |      57947 | False     |
+| False        | True     | True     |            1 |             0 |   65536 |    4470129 | False     |
+| False        | True     | True     |            1 |            16 |   65536 |    3835000 | False     |
+| False        | True     | True     |            1 |           256 |   65536 |    4199465 | False     |
+| False        | True     | True     |            1 |          2048 |   65536 |    4020224 | False     |
+| False        | True     | True     |         1024 |             0 |   65536 |    4480948 | False     |
+| False        | True     | True     |         1024 |            16 |   65536 |    3399859 | False     |
+| False        | True     | True     |         1024 |           256 |   65536 |    4207463 | False     |
+| False        | True     | True     |         1024 |          2048 |   65536 |    3950660 | False     |
+| False        | True     | True     |        49152 |             0 |   65536 |    4466367 | False     |
+| False        | True     | True     |        49152 |            16 |   65536 |    3102699 | False     |
+| False        | True     | True     |        49152 |           256 |   65536 |    3692237 | False     |
+| False        | True     | True     |        49152 |          2048 |   65536 |     522091 | False     |
+| True         | True     | False    |            1 |             0 | 1048576 |   25937667 | False     |
+| True         | True     | False    |            1 |            16 | 1048576 |   25941824 | False     |
+| True         | True     | False    |            1 |           256 | 1048576 |   25930000 | False     |
+| True         | True     | False    |            1 |          2048 | 1048576 |   25925412 | False     |
+| True         | True     | False    |         1024 |             0 | 1048576 |   25952237 | False     |
+| True         | True     | False    |         1024 |            16 | 1048576 |   25908622 | False     |
+| True         | True     | False    |         1024 |           256 | 1048576 |   25855000 | False     |
+| True         | True     | False    |         1024 |          2048 | 1048576 |   25487998 | False     |
+| True         | True     | False    |        49152 |             0 | 1048576 |   25885824 | False     |
+| True         | True     | False    |        49152 |            16 | 1048576 |   25317901 | False     |
+| True         | True     | False    |        49152 |           256 | 1048576 |   22949108 | False     |
+| True         | True     | False    |        49152 |          2048 | 1048576 |    5311547 | False     |
+| True         | True     | False    |            1 |             0 |   65536 |   25954704 | False     |
+| True         | True     | False    |            1 |            16 |   65536 |   25941978 | False     |
+| True         | True     | False    |            1 |           256 |   65536 |   25935196 | False     |
+| True         | True     | False    |            1 |          2048 |   65536 |   25924004 | False     |
+| True         | True     | False    |         1024 |             0 |   65536 |   25934483 | False     |
+| True         | True     | False    |         1024 |            16 |   65536 |   25906326 | False     |
+| True         | True     | False    |         1024 |           256 |   65536 |   25864144 | False     |
+| True         | True     | False    |         1024 |          2048 |   65536 |   25483936 | False     |
+| True         | True     | False    |        49152 |             0 |   65536 |   25893245 | False     |
+| True         | True     | False    |        49152 |            16 |   65536 |   25307544 | False     |
+| True         | True     | False    |        49152 |           256 |   65536 |   22949157 | False     |
+| True         | True     | False    |        49152 |          2048 |   65536 |    5310701 | False     |
+| False        | True     | False    |            1 |             0 | 1048576 |    4482684 | False     |
+| False        | True     | False    |            1 |            16 | 1048576 |    2490376 | False     |
+| False        | True     | False    |            1 |           256 | 1048576 |     500079 | False     |
+| False        | True     | False    |            1 |          2048 | 1048576 |      70263 | False     |
+| False        | True     | False    |         1024 |             0 | 1048576 |    4481550 | False     |
+| False        | True     | False    |         1024 |            16 | 1048576 |    2417633 | False     |
+| False        | True     | False    |         1024 |           256 | 1048576 |     487646 | False     |
+| False        | True     | False    |         1024 |          2048 | 1048576 |      70795 | False     |
+| False        | True     | False    |        49152 |             0 | 1048576 |    4465321 | False     |
+| False        | True     | False    |        49152 |            16 | 1048576 |    2283492 | False     |
+| False        | True     | False    |        49152 |           256 | 1048576 |     389843 | False     |
+| False        | True     | False    |        49152 |          2048 | 1048576 |      15742 | False     |
+| False        | True     | False    |            1 |             0 |   65536 |    4470331 | False     |
+| False        | True     | False    |            1 |            16 |   65536 |    2458957 | False     |
+| False        | True     | False    |            1 |           256 |   65536 |     507368 | False     |
+| False        | True     | False    |            1 |          2048 |   65536 |      70759 | False     |
+| False        | True     | False    |         1024 |             0 |   65536 |    4483550 | False     |
+| False        | True     | False    |         1024 |            16 |   65536 |    2427114 | False     |
+| False        | True     | False    |         1024 |           256 |   65536 |     494805 | False     |
+| False        | True     | False    |         1024 |          2048 |   65536 |      70247 | False     |
+| False        | True     | False    |        49152 |             0 |   65536 |    4468550 | False     |
+| False        | True     | False    |        49152 |            16 |   65536 |    2299569 | False     |
+| False        | True     | False    |        49152 |           256 |   65536 |     390096 | False     |
+| False        | True     | False    |        49152 |          2048 |   65536 |      15452 | False     |
+| True         | False    | True     |            1 |             0 | 1048576 |   25937045 | False     |
+| True         | False    | True     |            1 |            16 | 1048576 |   25932978 | False     |
+| True         | False    | True     |            1 |           256 | 1048576 |   25920000 | False     |
+| True         | False    | True     |            1 |          2048 | 1048576 |   25918019 | False     |
+| True         | False    | True     |         1024 |             0 | 1048576 |   25937888 | False     |
+| True         | False    | True     |         1024 |            16 | 1048576 |   25900407 | False     |
+| True         | False    | True     |         1024 |           256 | 1048576 |   25803108 | False     |
+| True         | False    | True     |         1024 |          2048 | 1048576 |   25059586 | False     |
+| True         | False    | True     |        49152 |             0 | 1048576 |   25881367 | False     |
+| True         | False    | True     |        49152 |            16 | 1048576 |   25298543 | False     |
+| True         | False    | True     |        49152 |           256 | 1048576 |   22887072 | False     |
+| True         | False    | True     |        49152 |          2048 | 1048576 |    4886367 | False     |
+| True         | False    | True     |            1 |             0 |   65536 |   25930263 | False     |
+| True         | False    | True     |            1 |            16 |   65536 |   25939592 | False     |
+| True         | False    | True     |            1 |           256 |   65536 |   25925000 | False     |
+| True         | False    | True     |            1 |          2048 |   65536 |   25916034 | False     |
+| True         | False    | True     |         1024 |             0 |   65536 |   25937824 | False     |
+| True         | False    | True     |         1024 |            16 |   65536 |   25899531 | False     |
+| True         | False    | True     |         1024 |           256 |   65536 |   25799765 | False     |
+| True         | False    | True     |         1024 |          2048 |   65536 |   25062721 | False     |
+| True         | False    | True     |        49152 |             0 |   65536 |   25877468 | False     |
+| True         | False    | True     |        49152 |            16 |   65536 |   25296518 | False     |
+| True         | False    | True     |        49152 |           256 |   65536 |   22885916 | False     |
+| True         | False    | True     |        49152 |          2048 |   65536 |    4886967 | False     |
+| False        | False    | True     |            1 |             0 | 1048576 |    4470218 | False     |
+| False        | False    | True     |            1 |            16 | 1048576 |    2124550 | False     |
+| False        | False    | True     |            1 |           256 | 1048576 |     431864 | False     |
+| False        | False    | True     |            1 |          2048 | 1048576 |      62032 | False     |
+| False        | False    | True     |         1024 |             0 | 1048576 |    4481678 | False     |
+| False        | False    | True     |         1024 |            16 | 1048576 |    2126875 | False     |
+| False        | False    | True     |         1024 |           256 | 1048576 |     430236 | False     |
+| False        | False    | True     |         1024 |          2048 | 1048576 |      60862 | False     |
+| False        | False    | True     |        49152 |             0 | 1048576 |    4466449 | False     |
+| False        | False    | True     |        49152 |            16 | 1048576 |    2079302 | False     |
+| False        | False    | True     |        49152 |           256 | 1048576 |     382442 | False     |
+| False        | False    | True     |        49152 |          2048 | 1048576 |      12820 | False     |
+| False        | False    | True     |            1 |             0 |   65536 |    4469860 | False     |
+| False        | False    | True     |            1 |            16 |   65536 |    2123819 | False     |
+| False        | False    | True     |            1 |           256 |   65536 |     430343 | False     |
+| False        | False    | True     |            1 |          2048 |   65536 |      61841 | False     |
+| False        | False    | True     |         1024 |             0 |   65536 |    4478824 | False     |
+| False        | False    | True     |         1024 |            16 |   65536 |    2123819 | False     |
+| False        | False    | True     |         1024 |           256 |   65536 |     429311 | False     |
+| False        | False    | True     |         1024 |          2048 |   65536 |      60818 | False     |
+| False        | False    | True     |        49152 |             0 |   65536 |    4466814 | False     |
+| False        | False    | True     |        49152 |            16 |   65536 |    2075749 | False     |
+| False        | False    | True     |        49152 |           256 |   65536 |     381065 | False     |
+| False        | False    | True     |        49152 |          2048 |   65536 |      12671 | False     |
+| True         | False    | False    |            1 |             0 | 1048576 |   25935941 | False     |
+| True         | False    | False    |            1 |            16 | 1048576 |   25931982 | False     |
+| True         | False    | False    |            1 |           256 | 1048576 |   25922656 | False     |
+| True         | False    | False    |            1 |          2048 | 1048576 |   25916019 | False     |
+| True         | False    | False    |         1024 |             0 | 1048576 |   25926346 | False     |
+| True         | False    | False    |         1024 |            16 | 1048576 |   25909539 | False     |
+| True         | False    | False    |         1024 |           256 | 1048576 |   25799504 | False     |
+| True         | False    | False    |         1024 |          2048 | 1048576 |   25064174 | False     |
+| True         | False    | False    |        49152 |             0 | 1048576 |   25883550 | False     |
+| True         | False    | False    |        49152 |            16 | 1048576 |   25297824 | False     |
+| True         | False    | False    |        49152 |           256 | 1048576 |   22885820 | False     |
+| True         | False    | False    |        49152 |          2048 | 1048576 |    4888951 | False     |
+| True         | False    | False    |            1 |             0 |   65536 |   25929824 | False     |
+| True         | False    | False    |            1 |            16 |   65536 |   25932982 | False     |
+| True         | False    | False    |            1 |           256 |   65536 |   25926325 | False     |
+| True         | False    | False    |            1 |          2048 |   65536 |   25914478 | False     |
+| True         | False    | False    |         1024 |             0 |   65536 |   25929245 | False     |
+| True         | False    | False    |         1024 |            16 |   65536 |   25902725 | False     |
+| True         | False    | False    |         1024 |           256 |   65536 |   25799108 | False     |
+| True         | False    | False    |         1024 |          2048 |   65536 |   25063367 | False     |
+| True         | False    | False    |        49152 |             0 |   65536 |   25883362 | False     |
+| True         | False    | False    |        49152 |            16 |   65536 |   25297616 | False     |
+| True         | False    | False    |        49152 |           256 |   65536 |   22885759 | False     |
+| True         | False    | False    |        49152 |          2048 |   65536 |    4886413 | False     |
+| False        | False    | False    |            1 |             0 | 1048576 |    4467367 | False     |
+| False        | False    | False    |            1 |            16 | 1048576 |    2126530 | False     |
+| False        | False    | False    |            1 |           256 | 1048576 |     430665 | False     |
+| False        | False    | False    |            1 |          2048 | 1048576 |      61823 | False     |
+| False        | False    | False    |         1024 |             0 | 1048576 |    4481169 | False     |
+| False        | False    | False    |         1024 |            16 | 1048576 |    2126110 | False     |
+| False        | False    | False    |         1024 |           256 | 1048576 |     430428 | False     |
+| False        | False    | False    |         1024 |          2048 | 1048576 |      61037 | False     |
+| False        | False    | False    |        49152 |             0 | 1048576 |    4463225 | False     |
+| False        | False    | False    |        49152 |            16 | 1048576 |    2081110 | False     |
+| False        | False    | False    |        49152 |           256 | 1048576 |     380974 | False     |
+| False        | False    | False    |        49152 |          2048 | 1048576 |      12752 | False     |
+| False        | False    | False    |            1 |             0 |   65536 |    4470115 | False     |
+| False        | False    | False    |            1 |            16 |   65536 |    2125898 | False     |
+| False        | False    | False    |            1 |           256 |   65536 |     430684 | False     |
+| False        | False    | False    |            1 |          2048 |   65536 |      62023 | False     |
+| False        | False    | False    |         1024 |             0 |   65536 |    4467640 | False     |
+| False        | False    | False    |         1024 |            16 |   65536 |    2125978 | False     |
+| False        | False    | False    |         1024 |           256 |   65536 |     430015 | False     |
+| False        | False    | False    |         1024 |          2048 |   65536 |      60852 | False     |
+| False        | False    | False    |        49152 |             0 |   65536 |    4468824 | False     |
+| False        | False    | False    |        49152 |            16 |   65536 |    2078274 | False     |
+| False        | False    | False    |        49152 |           256 |   65536 |     382497 | False     |
+| False        | False    | False    |        49152 |          2048 |   65536 |      12753 | False     |
